@@ -8,12 +8,22 @@
     <mat-tab-group (selectedTabChange)="clear()">
       <mat-tab label="Professores"> 
         <ul *ngIf="professores?.length > 0" class="list-click">
-          <li *ngFor="let professor of professores" (click)="clickProfessor(professor)">{{ professor.nome }}</li>
+          <li *ngFor="let professor of professores" (click)="clickProfessor(professor)">
+            <div class="list-img">
+              <img src="{{professor.foto}}" alt="Foto do Professor">
+            </div>
+            <p> {{ professor.nome }}</p>           
+          </li>
         </ul>
       </mat-tab>
       <mat-tab label="Matérias"> 
         <ul *ngIf="materias?.length > 0" class="list-click">
-          <li *ngFor="let materia of materias" (click)="clickMateria(materia)">{{ materia.nome }}</li>
+          <li *ngFor="let materia of materias" (click)="clickMateria(materia)">
+            <div class="list-img">
+              <img src="{{materia.img}}" alt="Icone materia">
+            </div>
+            <p>{{ materia.nome }}</p>            
+          </li>
         </ul>
       </mat-tab>
     </mat-tab-group>
