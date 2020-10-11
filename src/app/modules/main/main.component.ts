@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatTabChangeEvent } from '@angular/material/tabs';
 import { Materia } from 'src/app/models/materia.model';
 import { Professor } from 'src/app/models/professor.model';
 import { MateriaService } from 'src/app/services/materias.service';
@@ -12,7 +13,8 @@ import { ProfessorService } from 'src/app/services/professor.service';
 export class MainComponent implements OnInit {
   public professores: Professor[] = [];
   materias: Materia[] = [];
-  titulo: string = "Click em um professor ou em uma máteria para verificar aptidão.";
+  inicial: boolean = true;
+  titulo: string = "Clique em um professor para verificar as matérias lecionadas.";
   listaResposta: string[] = [];
 
   constructor(
@@ -26,11 +28,13 @@ export class MainComponent implements OnInit {
   }
 
   clickProfessor(professor: Professor) {
-    this.titulo = "Matérias Ensinadas";
+    this.inicial = false;
+    this.titulo = "Matérias Lecionadas";
     this._materiaService.getMateriasPorIds(professor.materias).then(x => this.listaResposta = x);
   }
 
   clickMateria(materia: Materia) {
+    this.inicial = false;
     this.titulo = "Professores Aptos";
     this._professorService.getProfessorPorMateria(materia.id).then(x => {
       this.listaResposta = [];
@@ -42,8 +46,14 @@ export class MainComponent implements OnInit {
     });
   }
 
-  clear() {
-    this.titulo = "Click em um professor ou em uma máteria para verificar aptidão.";
+  clear(event: MatTabChangeEvent) {
     this.listaResposta = [];
+    this.inicial = true;
+    if(event.index == 0) {
+      this.titulo = "Clique em um professor para verificar as matérias lecionadas.";
+    } else {
+      this.titulo = "Clique em uma máteria para verificar professores aptos.";
+    }
+    console.log(event)
   }
 }

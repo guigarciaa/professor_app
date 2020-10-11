@@ -1,57 +1,46 @@
 [
     {
         "id": 1,
-        "nome": "Português",
-        "img": "https://www.pinclipart.com/picdir/middle/221-2212185_200hr-value-transparent-books-icon-png-clipart.png"
+        "nome": "Português"
     },
     {
         "id": 2,
-        "nome": "Matemática",
-        "img": "https://www.pinclipart.com/picdir/middle/221-2212185_200hr-value-transparent-books-icon-png-clipart.png"
+        "nome": "Matemática"
     },
     {
         "id": 3,
-        "nome": "Inglês",
-        "img": "https://www.pinclipart.com/picdir/middle/221-2212185_200hr-value-transparent-books-icon-png-clipart.png"
+        "nome": "Inglês"
     },
     {
         "id": 4,
-        "nome": "Geografia",
-        "img": "https://www.pinclipart.com/picdir/middle/221-2212185_200hr-value-transparent-books-icon-png-clipart.png"
+        "nome": "Geografia"
     },
     {
         "id": 5,
-        "nome": "História",
-        "img": "https://www.pinclipart.com/picdir/middle/221-2212185_200hr-value-transparent-books-icon-png-clipart.png"
+        "nome": "História"
     },
     {
         "id": 6,
-        "nome": "Sociologia",
-        "img": "https://www.pinclipart.com/picdir/middle/221-2212185_200hr-value-transparent-books-icon-png-clipart.png"
+        "nome": "Sociologia"
     },
     {
         "id": 7,
-        "nome": "Filosofia",
-        "img": "https://www.pinclipart.com/picdir/middle/221-2212185_200hr-value-transparent-books-icon-png-clipart.png"
+        "nome": "Filosofia"
     },
     {
         "id": 8,
-        "nome": "Artes",
-        "img": "https://www.pinclipart.com/picdir/middle/221-2212185_200hr-value-transparent-books-icon-png-clipart.png"
+        "nome": "Artes"
     },
     {
         "id": 9,
-        "nome": "Educação Física",
-        "img": "https://www.pinclipart.com/picdir/middle/221-2212185_200hr-value-transparent-books-icon-png-clipart.png"
+        "nome": "Educação Física"
     },
     {
         "id": 10,
-        "nome": "Biologia",
-        "img": "https://www.pinclipart.com/picdir/middle/221-2212185_200hr-value-transparent-books-icon-png-clipart.png"
+        "nome": "Biologia"
     },
     {
         "id": 11,
-        "nome": "Química",
-        "img": "https://www.pinclipart.com/picdir/middle/221-2212185_200hr-value-transparent-books-icon-png-clipart.png"
+        "nome": "Química"
     }    
 ]
