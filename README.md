@@ -1,4 +1,4 @@
-# ProjetoProfessor
+# Projeto Professor
 Aplicação foi feita com base nos requisitos a baixo:
 - Cinco professores e onze matérias;
 - Cada professor pode aplicar mais de uma matéria e cada matéria pode ser dada por mais de um professor;
