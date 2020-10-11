@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+  <span>App Organização Professores</span>
+</mat-toolbar>
+
+
+<div class="container">
+  <section class="column">
+    <mat-tab-group (selectedTabChange)="clear()">
+      <mat-tab label="Professores"> 
+        <ul *ngIf="professores?.length > 0" class="list-click">
+          <li *ngFor="let professor of professores" (click)="clickProfessor(professor)">{{ professor.nome }}</li>
+        </ul>
+      </mat-tab>
+      <mat-tab label="Matérias"> 
+        <ul *ngIf="materias?.length > 0" class="list-click">
+          <li *ngFor="let materia of materias" (click)="clickMateria(materia)">{{ materia.nome }}</li>
+        </ul>
+      </mat-tab>
+    </mat-tab-group>
+  </section>
+  <section class="column">
+    <mat-toolbar *ngIf="titulo">
+      <span>{{titulo}}</span>
+    </mat-toolbar>
+    <ul *ngIf="listaResposta?.length > 0" class="list">
+      <li *ngFor="let resposta of listaResposta">{{ resposta }}</li>
+    </ul>
+  </section>
+</div>
+
